@@ -1,6 +1,6 @@
 package org.example.homework4;
 
-import
+import org.example.UI.InterSeminarMenu;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
