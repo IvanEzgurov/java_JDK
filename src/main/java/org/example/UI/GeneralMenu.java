@@ -1,6 +1,7 @@
 package org.example.UI;
 
 import org.example.homework4.Homework4Menu;
+import org.example.less5.homework5.HW5;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,6 +16,7 @@ public class GeneralMenu extends JFrame {
 
 
     private final JButton BTN_HOMEWORK_4 = new JButton("Homework 4");
+    private final JButton BTN_HOMEWORK_5 = new JButton("Homework 5");
     private final JButton BTN_EXIT = new JButton("Exit program");
 
     public void generalMenu(){
@@ -30,6 +32,7 @@ public class GeneralMenu extends JFrame {
 
         JPanel panelTask = new JPanel(new GridLayout(4, 1));
         panelTask.add(BTN_HOMEWORK_4);
+        panelTask.add(BTN_HOMEWORK_5);
         add(panelTask, BorderLayout.CENTER);
 
         setVisible(true);
@@ -45,6 +48,12 @@ public class GeneralMenu extends JFrame {
         BTN_HOMEWORK_4.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 new Homework4Menu().start();
+            }
+        });
+
+        BTN_HOMEWORK_5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new HW5().start();
             }
         });
     }
