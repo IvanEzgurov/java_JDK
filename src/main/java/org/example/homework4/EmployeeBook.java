@@ -8,6 +8,7 @@ public class EmployeeBook {
     private List<Employee> employes;
 
     public EmployeeBook() {
+
         employes = new ArrayList<>();
     }
 
@@ -28,6 +29,7 @@ public class EmployeeBook {
      * Метод вывода сотрудника
      */
     public Employee getEmployee(int index) {
+
         return contains(index) ? employes.get(index) : null;
     }
 
@@ -43,6 +45,7 @@ public class EmployeeBook {
      * Метод, возвращающий длину списка сотрудников
      */
     public int count() {
+
         return employes.size();
     }
 
